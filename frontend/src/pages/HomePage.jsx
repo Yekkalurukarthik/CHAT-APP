@@ -74,9 +74,9 @@ const HomePage = () => {
           <div className='mb-6 sm:mb-8'>
             <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4'>
               <div>
-                <h2 className='text-2xl sm:text-3xl font-bold tracking-tight'>Meet New Learner</h2>
+                <h2 className='text-2xl sm:text-3xl font-bold tracking-tight'>Meet New Friend</h2>
                 <p className='opacity-70'>
-                  Discover perfect language exchange partners based on your profile
+                  Discover perfect language  partners based on your profile
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ const HomePage = () => {
           ) : recommendedUsers.length === 0 ? (
             <div className='card bg-base-200 p-6 text-center'>
               <h3 className='font-semibold text-lg mb-2 '>No recommendations available</h3>
-              <p className='text-base-content'>Check back for new languge partners!</p>
+              <p className='text-base-content'>Check back for Friends!</p>
             </div>
           ) : (
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>

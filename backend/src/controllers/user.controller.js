@@ -13,7 +13,7 @@ export async function getRecommendedUsers(req, res) {
                 { isOnboarded: true }
             ]
         })
-        console.log(recommendedUsers);
+        // console.log(recommendedUsers);
         res.status(200).json(recommendedUsers);
     } catch (error) {
         console.error("Error in getRecommended Users controller", error.message);

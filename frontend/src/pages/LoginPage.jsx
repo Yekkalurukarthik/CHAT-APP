@@ -1,4 +1,4 @@
-import { ShipWheelIcon } from "lucide-react";
+import { HouseHeart } from "lucide-react";
 import { useState } from "react"
 import { Link } from "react-router";
 import useLogin from "../hooks/useLogin.js";
@@ -21,9 +21,10 @@ const LoginPage = () => {
         <div className="w-full lg:w-1/2 p-4 sm:p-8 flex flex-col">
           {/* LOGO */}
           <div className="mb-4 flex items-center justify-start gap-2">
-            <ShipWheelIcon className="size-9 text-primary" />
+            <HouseHeart className="size-9 text-primary" />
             <span className="text-3xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider">
-              Streamify
+              
+            𝓔𝓵-𝓢𝓽𝓻𝓪𝓷𝓰𝓮𝓻
             </span>
           </div>
           {/* ERROR MESSAGE DISPLAYS */}
@@ -33,7 +34,7 @@ const LoginPage = () => {
               <div className="space-y-4">
                 <div>
                   <h2 className="text-xl font-semibold">Welcome back</h2>
-                  <p>Sign in to your account to continue your langauge journey</p>
+                  <p>Sign in to your account </p>
                 </div>
                 {error && (
             <div>
@@ -102,10 +103,10 @@ const LoginPage = () => {
             </div>
             <div clasName='text-center space-y-3 mt-6'>
               <h2 className='text-xl font-semibold'>
-                Conect with language partners worldwide
+                Connect with different partners worldwide!
               </h2>
               <p className='opacity-70'>
-                Practice conversation, make friends, and improve your language skills together
+                Practice conversation, make friends, and improve your language!
               </p>
             </div>
           </div>

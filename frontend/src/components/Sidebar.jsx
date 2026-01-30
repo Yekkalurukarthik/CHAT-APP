@@ -1,7 +1,7 @@
 import React from 'react'
 import useAuthUser from '../hooks/useAuthUser'
 import { Link, useLocation } from 'react-router';
-import {BellIcon, HomeIcon, ShipWheelIcon, UserIcon} from "lucide-react"
+import {BellIcon, HomeIcon, HouseHeart, ShipWheelIcon, UserIcon} from "lucide-react"
 const Sidebar = () => {
     const { authUser } = useAuthUser();
     const location = useLocation();
@@ -11,9 +11,10 @@ const Sidebar = () => {
         <aside className='w-64 bg-base-200 border-r border-base-300 hidden lg:flex flex-col h-screen sticky top-0'>
            <div className='p-5 border-b border-base-300'>
              <Link to="/" className='flex items-center gap-2.5'>
-                <ShipWheelIcon className="size-9 text-primary" />
-                <span className="text-3xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider">
-                    Streamify
+                <HouseHeart className="size-9 text-primary" />
+                <span className="text-2xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider">
+                    
+                𝓔𝓵-𝓢𝓽𝓻𝓪𝓷𝓰𝓮𝓻
                 </span>
             </Link>
            </div>
@@ -22,12 +23,6 @@ const Sidebar = () => {
                     <HomeIcon className='size-5 text-base-content opacity-70'>
                     </HomeIcon>
                     <span>Home</span>
-                </Link>
-
-                <Link to="/friends" className={`btn btn-ghost justify-start w-full gap-3 px-3 normal-case ${currentPath === "/friends"? "btn-active":""}`}>
-                    <UserIcon className='size-5 text-base-content opacity-70'>
-                    </UserIcon>
-                    <span>Friends</span>
                 </Link>
 
                 <Link to="/notifications" className={`btn btn-ghost justify-start w-full gap-3 px-3 normal-case ${currentPath === "/notifications"? "btn-active":""}`}>

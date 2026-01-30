@@ -1,6 +1,6 @@
 import useAuthUser from '../hooks/useAuthUser'
 import { Link, useLocation } from 'react-router';
-import { BellIcon, LogOutIcon, ShipWheelIcon } from 'lucide-react';
+import { BellIcon, HouseHeart, LogOutIcon, ShipWheelIcon } from 'lucide-react';
 import ThemeSelector from './ThemeSelector.jsx';
 import useLogout from '../hooks/useLogout.js';
 
@@ -20,9 +20,10 @@ const Navbar = () => {
 
             <div className='pl-5'>
               <Link to="/" className="flex items-center gap-2.5">
-                <ShipWheelIcon className='size-9 text-primary' />
+                <HouseHeart className='size-9 text-primary' />
                 <span className='text-3xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider'>
-                  Streamify
+                  
+                  𝓔𝓵-𝓢𝓽𝓻𝓪𝓷𝓰𝓮𝓻
                 </span>
               </Link>
             </div>
